@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from flask import Blueprint, request, make_response, render_template, flash, redirect, url_for, session, g
-from flask.ext.sqlalchemy import SQLAlchemy
-from flask.ext.login import LoginManager, login_user, logout_user, current_user, login_required
+from flask_sqlalchemy import SQLAlchemy
+from flask_login import LoginManager, login_user, logout_user, current_user, login_required
 from flask_wtf.csrf import CsrfProtect
 
 from .models import User, ROLE_USER, ROLE_ADMIN
